@@ -1,0 +1,45 @@
+{
+  "name": "md-collapsible-sections",
+  "displayName": "Markdown Collapsible Sections",
+  "description": "Collapse and expand sections in Markdown preview by clicking headers",
+  "version": "0.1.0",
+  "icon": "images/icon.png",
+  "publisher": "jayblack388",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0",
+    "node": ">=18.0.0"
+  },
+  "categories": ["Markdown"],
+  "keywords": [
+    "markdown",
+    "collapse",
+    "expand",
+    "sections",
+    "preview",
+    "fold"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayblack388/md-collapsible-sections"
+  },
+  "contributes": {
+    "markdown.previewStyles": ["./media/collapsible.css"],
+    "markdown.previewScripts": ["./media/collapsible.js"]
+  },
+  "scripts": {
+    "commit": "cz",
+    "package": "vsce package --no-yarn"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "ovsx": "^0.8.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

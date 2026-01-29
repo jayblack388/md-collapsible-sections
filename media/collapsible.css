@@ -1,0 +1,50 @@
+/* Markdown Collapsible Sections - Styles */
+
+/* Chevron icon */
+.mcs-chevron {
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+/* Rotate chevron when collapsed */
+.mcs-collapsed .mcs-chevron {
+  transform: rotate(-90deg);
+}
+
+/* Header styling when collapsible */
+h1.mcs-processed,
+h2.mcs-processed,
+h3.mcs-processed,
+h4.mcs-processed,
+h5.mcs-processed,
+h6.mcs-processed {
+  user-select: none;
+}
+
+/* Hover effect on collapsible headers */
+h1.mcs-processed:hover,
+h2.mcs-processed:hover,
+h3.mcs-processed:hover,
+h4.mcs-processed:hover,
+h5.mcs-processed:hover,
+h6.mcs-processed:hover {
+  opacity: 0.8;
+}
+
+/* Content wrapper */
+.mcs-content {
+  /* Smooth transition for collapse/expand */
+  transition: opacity 0.15s ease;
+}
+
+/* Collapsed state indicator on header */
+.mcs-collapsed {
+  opacity: 0.7;
+}
+
+.mcs-collapsed:hover {
+  opacity: 0.9;
+}

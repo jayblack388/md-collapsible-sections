@@ -2,7 +2,7 @@
   "name": "md-collapsible-sections",
   "displayName": "Markdown Collapsible Sections",
   "description": "Collapse and expand sections in Markdown preview by clicking headers",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "icon": "images/icon.png",
   "publisher": "jayblack388",
   "license": "MIT",
@@ -10,7 +10,9 @@
     "vscode": "^1.74.0",
     "node": ">=18.0.0"
   },
-  "categories": ["Markdown"],
+  "categories": [
+    "Markdown"
+  ],
   "keywords": [
     "markdown",
     "collapse",
@@ -24,8 +26,12 @@
     "url": "https://github.com/jayblack388/md-collapsible-sections"
   },
   "contributes": {
-    "markdown.previewStyles": ["./media/collapsible.css"],
-    "markdown.previewScripts": ["./media/collapsible.js"]
+    "markdown.previewStyles": [
+      "./media/collapsible.css"
+    ],
+    "markdown.previewScripts": [
+      "./media/collapsible.js"
+    ]
   },
   "scripts": {
     "commit": "cz",
